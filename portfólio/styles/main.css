@@ -1,0 +1,53 @@
+:root {
+  --body-bg-color: #22212C;
+  --text-color: #837E9F;
+  --bg-cards: #302F3D;
+  --bg-techs: #CB92B1;
+}
+
+body {
+  font-family: "Merriweather Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 60px;
+}
+
+aside .profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+  height: 290px;
+  text-align: center;
+  background-color: var(--bg-cards);
+  border-radius: 20px;
+}
+aside .profile__header .content h1 {
+  margin: 30px 0 10px 0;
+}
+aside .profile__header .content h1, aside .profile__header .content p {
+  color: var(--text-color);
+}
+aside .profile__header img {
+  width: 100%;
+  max-width: 128px;
+  border: 2px solid #00FF00;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+aside .profile__header img:hover {
+  border: 2px solid #0004ff;
+}/*# sourceMappingURL=main.css.map */
