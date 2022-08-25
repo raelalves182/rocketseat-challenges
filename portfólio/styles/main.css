@@ -112,4 +112,34 @@ aside .technologies-bg .title__technologies ul li {
   justify-content: center;
   font-weight: 700;
   cursor: pointer;
+}
+aside .experiences-bg {
+  background-color: var(--bg-cards);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+aside .experiences-bg .experiences h1 {
+  padding: 20px 0 0 30px;
+  color: var(--text-color);
+  font-size: 20px;
+}
+aside .experiences-bg .experiences__info {
+  padding: 20px 80px 30px;
+}
+aside .experiences-bg .experiences__info ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  list-style: circle;
+  color: var(--text-color);
+  font-weight: 700;
+}
+aside .experiences-bg .experiences__info ul li span {
+  font-size: 14px;
+  font-weight: normal;
+}
+aside .experiences-bg .experiences__info ul li strong {
+  font-weight: 300;
 }/*# sourceMappingURL=main.css.map */

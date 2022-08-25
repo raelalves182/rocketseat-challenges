@@ -134,4 +134,43 @@ aside {
       }
     }
   }
+
+  .experiences-bg {
+    background-color: var(--bg-cards);
+    border-radius: 20px;
+    //height: 350px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+
+    .experiences {
+      h1 {
+        padding: 20px 0 0 30px;
+        color: var(--text-color);
+        font-size: 20px;
+      }
+
+      &__info {
+        padding: 20px 80px 30px;
+        
+        ul {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          list-style: circle;
+          color: var(--text-color);
+          font-weight: 700;
+
+          li span {
+            font-size: 14px;
+            font-weight: normal;
+          }
+
+          li strong {
+            font-weight: 300;
+          }
+        }
+      }
+    }
+  }
 }
