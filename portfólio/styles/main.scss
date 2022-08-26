@@ -30,7 +30,7 @@ section {
   margin: 0 auto;
   display: grid;
   grid-template-columns: auto 1fr;
-  gap: 60px;
+  gap: 30px 60px;
   padding: 24px;
 }
 
@@ -311,6 +311,26 @@ main {
           }
         }
       }
+    }
+  }
+}
+
+footer {
+  font-size: 12px;
+  display: grid;
+  grid-column: -1/1;
+  justify-items: center;
+  color: var(--text-color);
+  font-weight: normal;
+
+  a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: normal;
+    transition: 0.3s;
+
+    &:hover {
+      color: var(--bg-techs);
     }
   }
 }
