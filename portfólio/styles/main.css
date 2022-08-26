@@ -8,6 +8,7 @@
 body {
   font-family: "Merriweather Sans", sans-serif;
   background-color: var(--body-bg-color);
+  margin: 0;
 }
 
 h1,
@@ -25,11 +26,12 @@ ul {
 }
 
 section {
-  max-width: 1200px;
+  max-width: 1440px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 60px;
+  padding: 24px;
 }
 
 aside .profile {
@@ -113,22 +115,22 @@ aside .technologies-bg .title__technologies ul li {
   font-weight: 700;
   cursor: pointer;
 }
-aside .experiences-bg {
+aside .experiences-bg, aside .education-bg {
   background-color: var(--bg-cards);
   border-radius: 20px;
   display: flex;
   align-items: center;
   margin-top: 30px;
 }
-aside .experiences-bg .experiences h1 {
+aside .experiences-bg .experiences h1, aside .education-bg .experiences h1, aside .education-bg .education h1 {
   padding: 20px 0 0 30px;
   color: var(--text-color);
   font-size: 20px;
 }
-aside .experiences-bg .experiences__info {
+aside .experiences-bg .experiences__info, aside .education-bg .experiences__info, aside .education-bg .education__info {
   padding: 20px 80px 30px;
 }
-aside .experiences-bg .experiences__info ul {
+aside .experiences-bg .experiences__info ul, aside .education-bg .experiences__info ul, aside .education-bg .education__info ul {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -136,10 +138,101 @@ aside .experiences-bg .experiences__info ul {
   color: var(--text-color);
   font-weight: 700;
 }
-aside .experiences-bg .experiences__info ul li span {
+aside .experiences-bg .experiences__info ul li span, aside .education-bg .experiences__info ul li span, aside .education-bg .education__info ul li span {
   font-size: 14px;
   font-weight: normal;
 }
-aside .experiences-bg .experiences__info ul li strong {
+aside .experiences-bg .experiences__info ul li strong, aside .education-bg .experiences__info ul li strong, aside .education-bg .education__info ul li strong {
   font-weight: 300;
+}
+main .projects-bg, main .recents-bg {
+  background-color: var(--bg-cards);
+  width: 100%;
+  height: 86px;
+  display: grid;
+  border-radius: 20px;
+}
+main .projects-bg .projects, main .projects-bg .recents-bg .recents, main .recents-bg .projects-bg .recents, main .recents-bg .projects, main .recents-bg .recents {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+}
+main .projects-bg .projects h1, main .projects-bg .recents-bg .recents h1, main .recents-bg .projects-bg .recents h1, main .recents-bg .projects h1, main .recents-bg .recents h1, main .projects-bg .projects a, main .projects-bg .recents-bg .recents a, main .recents-bg .projects-bg .recents a, main .recents-bg .projects a, main .recents-bg .recents a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+main .project-bg {
+  margin-top: 30px;
+}
+main .project-bg .project {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+main .project-bg .project .projectOne, main .project-bg .project .projectTwo {
+  background-color: var(--bg-cards);
+  border-radius: 20px;
+  padding: 30px;
+}
+main .project-bg .project .projectOne .title, main .project-bg .project .projectTwo .title {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 22px;
+}
+main .project-bg .project .projectOne .title h1, main .project-bg .project .projectTwo .title h1 {
+  color: var(--text-color);
+}
+main .project-bg .project .projectOne p, main .project-bg .project .projectTwo p {
+  color: var(--text-color);
+  margin-bottom: 30px;
+}
+main .project-bg .project .projectOne .card, main .project-bg .project .projectTwo .card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .project-bg .project .projectOne .card .card-one, main .project-bg .project .projectTwo .card .card-one, main .project-bg .project .projectOne .card .card-two, main .project-bg .project .projectTwo .card .card-two {
+  display: flex;
+  gap: 8px;
+  color: var(--text-color);
+}
+main .recents-bg {
+  margin-top: 30px;
+}
+main .posts-bg {
+  background-color: var(--bg-cards);
+  color: var(--text-color);
+  margin-top: 30px;
+  border-radius: 20px;
+}
+main .posts-bg .posts {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  gap: 20px;
+}
+main .posts-bg .posts img {
+  width: 100%;
+  max-width: 128px;
+  border-radius: 50%;
+}
+main .posts-bg .posts__text h2 {
+  font-size: 16px;
+}
+main .posts-bg .posts__text .textOne {
+  margin-bottom: 30px;
+}
+main .posts-bg .posts__text .textOne h1 {
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+main .posts-bg .posts__text .textOne span {
+  font-size: 14px;
+}
+main .posts-bg .posts__text .textTwo ul {
+  margin-top: 12px;
+  display: flex;
+  font-size: 14px;
+  gap: 30px;
 }/*# sourceMappingURL=main.css.map */
