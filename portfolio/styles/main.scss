@@ -3,6 +3,7 @@
   --text-color: #837E9F;
   --bg-cards: #302F3D;
   --bg-techs: #CB92B1;
+  --bx-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 body {
@@ -39,7 +40,6 @@ aside {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 350px;
     height: 290px;
     text-align: center;
     background-color: var(--bg-cards);
@@ -81,13 +81,17 @@ aside {
     .links {
       width: 100%;
       margin-left: 40px;
-
+      
       ul li {
         display: flex;
         align-items: center;
         gap: 20px;
-        color: var(--text-color);
         margin-bottom: 20px;
+        
+        a {
+          text-decoration: none;
+          color: var(--text-color);
+        }
 
         &:nth-last-child(1) {
           margin-bottom: 0;
@@ -186,6 +190,38 @@ aside {
       }
     }
   }
+
+  .profile,
+  .links-bg,
+  .technologies-bg,
+  .experiences-bg,
+  .education-b {
+    box-shadow: var(--bx-shadow);
+  }
+
+  @media (max-width: 900px) {
+    .technologies-bg, .experiences-bg {
+      text-align: center;
+      justify-content: center;
+    }
+
+    .experiences-bg .experiences h1 {
+      padding: 20px 0 0 0;
+    }
+
+    .links-bg .links {
+      margin-left: 0px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      ul {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+    }
+  }
 }
 
 main {
@@ -221,6 +257,7 @@ main {
         background-color: var(--bg-cards);
         border-radius: 20px;
         padding: 30px;
+        box-shadow: var(--bx-shadow);
       }
 
       .projectOne {
@@ -243,11 +280,23 @@ main {
           display: flex;
           justify-content: space-between;
           align-items: center;
-
+          
           .card-one, .card-two {
             display: flex;
             gap: 8px;
             color: var(--text-color);
+            position: relative;
+
+            .circle::before {
+              content: "";
+              position: absolute;
+              width: 15px;
+              height: 15px;
+              background: #E7DE79;
+              border: 2px solid #837E9F;
+              left: -30px;
+              border-radius: 50%;
+            }
           }
         }
       }
@@ -282,6 +331,7 @@ main {
       img {
         width: 100%;
         max-width: 128px;
+        min-width: 128px;
         border-radius: 50%;
       }
 
@@ -313,6 +363,52 @@ main {
       }
     }
   }
+
+  .projects-bg,
+  .recents-bg,
+  .posts-bg {
+    box-shadow: var(--bx-shadow);
+  }
+
+  @media (max-width: 1200px) {
+    .project-bg .project {
+      flex-direction: column;
+    }
+
+    .posts-bg .posts__text .textOne {
+      h1 {
+        font-size: 14px;
+      }
+
+      span {
+        font-size: 12px;
+      }
+    }
+
+    .posts-bg .posts__text {
+      h2 {
+        font-size: 14px;
+      }
+
+      .textTwo {
+        ul {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  section {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 900px) {
+  section {
+    grid-template-columns: auto;
+  }  
 }
 
 footer {

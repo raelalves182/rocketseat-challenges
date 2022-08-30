@@ -3,6 +3,7 @@
   --text-color: #837E9F;
   --bg-cards: #302F3D;
   --bg-techs: #CB92B1;
+  --bx-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 body {
@@ -38,7 +39,6 @@ aside .profile {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 350px;
   height: 290px;
   text-align: center;
   background-color: var(--bg-cards);
@@ -76,8 +76,11 @@ aside .links-bg .links ul li {
   display: flex;
   align-items: center;
   gap: 20px;
-  color: var(--text-color);
   margin-bottom: 20px;
+}
+aside .links-bg .links ul li a {
+  text-decoration: none;
+  color: var(--text-color);
 }
 aside .links-bg .links ul li:nth-last-child(1) {
   margin-bottom: 0;
@@ -145,6 +148,35 @@ aside .experiences-bg .experiences__info ul li span, aside .education-bg .experi
 aside .experiences-bg .experiences__info ul li strong, aside .education-bg .experiences__info ul li strong, aside .education-bg .education__info ul li strong {
   font-weight: 300;
 }
+aside .profile,
+aside .links-bg,
+aside .technologies-bg,
+aside .experiences-bg,
+aside .education-bg,
+aside .education-b {
+  box-shadow: var(--bx-shadow);
+}
+@media (max-width: 900px) {
+  aside .technologies-bg, aside .experiences-bg, aside .education-bg {
+    text-align: center;
+    justify-content: center;
+  }
+  aside .experiences-bg .experiences h1, aside .education-bg .experiences h1, aside .education-bg .education h1 {
+    padding: 20px 0 0 0;
+  }
+  aside .links-bg .links {
+    margin-left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  aside .links-bg .links ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
 main .projects-bg, main .recents-bg {
   background-color: var(--bg-cards);
   width: 100%;
@@ -174,6 +206,7 @@ main .project-bg .project .projectOne, main .project-bg .project .projectTwo {
   background-color: var(--bg-cards);
   border-radius: 20px;
   padding: 30px;
+  box-shadow: var(--bx-shadow);
 }
 main .project-bg .project .projectOne .title, main .project-bg .project .projectTwo .title {
   display: flex;
@@ -196,6 +229,17 @@ main .project-bg .project .projectOne .card .card-one, main .project-bg .project
   display: flex;
   gap: 8px;
   color: var(--text-color);
+  position: relative;
+}
+main .project-bg .project .projectOne .card .card-one .circle::before, main .project-bg .project .projectTwo .card .card-one .circle::before, main .project-bg .project .projectOne .card .card-two .circle::before, main .project-bg .project .projectTwo .card .card-two .circle::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: #E7DE79;
+  border: 2px solid #837E9F;
+  left: -30px;
+  border-radius: 50%;
 }
 main .recents-bg {
   margin-top: 30px;
@@ -215,6 +259,7 @@ main .posts-bg .posts {
 main .posts-bg .posts img {
   width: 100%;
   max-width: 128px;
+  min-width: 128px;
   border-radius: 50%;
 }
 main .posts-bg .posts__text h2 {
@@ -236,7 +281,39 @@ main .posts-bg .posts__text .textTwo ul {
   font-size: 14px;
   gap: 30px;
 }
+main .projects-bg, main .recents-bg,
+main .recents-bg,
+main .posts-bg {
+  box-shadow: var(--bx-shadow);
+}
+@media (max-width: 1200px) {
+  main .project-bg .project {
+    flex-direction: column;
+  }
+  main .posts-bg .posts__text .textOne h1 {
+    font-size: 14px;
+  }
+  main .posts-bg .posts__text .textOne span {
+    font-size: 12px;
+  }
+  main .posts-bg .posts__text h2 {
+    font-size: 14px;
+  }
+  main .posts-bg .posts__text .textTwo ul {
+    font-size: 12px;
+  }
+}
 
+@media (max-width: 1200px) {
+  section {
+    gap: 30px;
+  }
+}
+@media (max-width: 900px) {
+  section {
+    grid-template-columns: auto;
+  }
+}
 footer {
   font-size: 12px;
   display: grid;
