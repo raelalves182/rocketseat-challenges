@@ -115,6 +115,9 @@ p {
   color: var(--bg-button-color);
   font-size: 14px;
   font-weight: 700;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
 }
 .container .hero {
   width: 50%;
