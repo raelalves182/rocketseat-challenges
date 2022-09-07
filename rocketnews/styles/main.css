@@ -105,6 +105,13 @@ p {
 .container .news .header form .btn input::placeholder {
   padding-left: 10px;
 }
+.container .news .header form .btn button {
+  border: none;
+  background-color: var(--bg-button-color);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
 .container .news .header .read {
   margin-top: 50px;
 }

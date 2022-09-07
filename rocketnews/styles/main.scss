@@ -108,6 +108,14 @@ p {
               padding-left: 10px;
             }
           }
+
+          button {
+            border: none;
+            background-color: var(--bg-button-color);
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+          }
         }
       }
 
