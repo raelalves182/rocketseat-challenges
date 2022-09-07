@@ -86,7 +86,6 @@ p {
 .container .news .header form .btn img {
   padding: 12px;
   background: var(--bg-button-color);
-  border-radius: 0 4px 4px 0;
 }
 .container .news .header form .btn input {
   width: 100%;
@@ -111,6 +110,7 @@ p {
   display: flex;
   align-items: center;
   cursor: pointer;
+  border-radius: 0 4px 4px 0;
 }
 .container .news .header .read {
   margin-top: 50px;
