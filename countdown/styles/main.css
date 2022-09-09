@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../assets/bottom-image.svg) no-repeat bottom, url(../assets/top-image.svg) no-repeat top #E5E5E5;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+.header {
+  display: flex;
+  gap: 33px;
+}
+.header__left h1 {
+  font-size: 36px;
+  color: #6C63FF;
+  text-transform: uppercase;
+  letter-spacing: 0.105em;
+  line-height: 54px;
+  margin-bottom: 20px;
+}
+.header__left .hours {
+  margin-bottom: 40px;
+}
+.header__left .hours ul {
+  list-style: none;
+  display: flex;
+  gap: 90px;
+  color: #C8C8C8;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: capitalize;
+  padding-left: 30px;
+}
+.header__left .hours p {
+  font-size: 72px;
+  color: #4D4C59;
+  line-height: 108px;
+}
+.header__left .subscribe {
+  text-align: center;
+}
+.header__left .subscribe p {
+  color: #9C9AB6;
+  font-size: 14px;
+  line-height: 21px;
+  margin-bottom: 36px;
+}
+.header__left .subscribe button {
+  padding: 16px 32px;
+  border: none;
+  border-radius: 10px;
+  background: #6C63FF;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+.header__left .subscribe button:hover {
+  opacity: 0.8;
+}/*# sourceMappingURL=main.css.map */
