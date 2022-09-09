@@ -5,6 +5,7 @@ setInterval(function() {
   let minuto = novaHora.getMinutes();
   let segundos = novaHora.getSeconds();
 
+  dia = zero(dia);
   minuto = zero(minuto);
   segundos = zero(segundos);
 
