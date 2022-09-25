@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles/main.css">
   <title>Pricing Table</title>
 </head>
@@ -13,16 +16,16 @@
     <p>Conheça nossas soluções e escolha o plano ideal para o seu próximo projeto</p>
   </header>
 
-  <main class="container">
-    <section>
+  <main class="container card">
+    <section class="card-item">
       <span>Free</span>
 
-      <div>
+      <div class="price">
         <span><strong>R$ 0,00</strong>/mês</span>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>
 
-      <div>
+      <div class="text">
         <ul>
           <li>Lorem ipsum dolor sit amet</li>
           <li>Lorem ipsum dolor sit amet</li>
@@ -34,39 +37,41 @@
       </button>
     </section>
 
-    <section>
-      <div>
+    <section class="card-item second">
+      <div class="header-item">
         <h2>Básico</h2>
         <span>Popular</span>
       </div>
 
-      <div>
-        <span><strong>R$ 29,00</strong>/mês</span>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <div class="content">
+        <div class="price">
+          <span><strong>R$ 29,00</strong>/mês</span>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+  
+        <div class="text">
+          <ul>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Lorem ipsum dolor sit amet</li>
+          </ul>
+        </div>
+  
+        <button class="btn">
+          Assinar
+        </button>
       </div>
-
-      <div>
-        <ul>
-          <li>Lorem ipsum dolor sit amet</li>
-          <li>Lorem ipsum dolor sit amet</li>
-          <li>Lorem ipsum dolor sit amet</li>
-        </ul>
-      </div>
-
-      <button>
-        Assinar
-      </button>
     </section>
 
-    <section>
+    <section class="card-item">
       <span>Profissional</span>
 
-      <div>
+      <div class="price">
         <span><strong>R$ 59,00</strong>/mês</span>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>
 
-      <div>
+      <div class="text">
         <ul>
           <li>Lorem ipsum dolor sit amet</li>
           <li>Lorem ipsum dolor sit amet</li>
@@ -75,7 +80,7 @@
         </ul>
       </div>
 
-      <button>
+      <button class="btn-two">
         Assinar
       </button>
     </section>

@@ -15,6 +15,7 @@ body {
   background-image: linear-gradient(to top, white 50%, #1D539E 50%);
   background-repeat: no-repeat;
   height: 100vh;
+  font-family: 'Open Sans', sans-serif;
 }
 
 ul {
@@ -43,5 +44,139 @@ ul {
     line-height: 25px;
     max-width: 50ch;
     margin: auto;
+  }
+}
+
+.card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+
+  .card-item {
+    width: 100%;
+    max-width: 355px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 2px rgba(142, 150, 185, 0.25);
+    border-radius: 8px;
+    padding: 30px;
+
+    span {
+      color: #1E2338;
+      line-height: 25px;
+      font-size: 18px;
+    }
+
+    p, ul {
+      color: #828799;
+      font-size: 14px;
+      line-height: 19px;
+    }
+
+    ul li {
+      margin-bottom: 20px;
+      position: relative;
+      padding-left: 20px;
+
+      &::before {
+        content: url(../assets/check.svg);
+        position: absolute;
+        left: -4px;
+      }
+    }
+
+    .price {
+      margin-top: 20px;
+
+      span {
+        color: #828799;
+
+        strong {
+          color: black;
+          font-size: 36px;
+          line-height: 49px;
+          font-weight: bold;
+        }
+      }
+
+      p {
+        padding: 10px 0 40px;
+      }
+    }
+
+    button {
+      padding: 8px 16px;
+      width: 100%;
+      border: none;
+      border: 1px solid #1D539E;
+      border-radius: 10px;
+      font-size: 18px;
+      color: #1D539E;
+      text-transform: uppercase;
+      background-color: #FFFFFF;
+      cursor: pointer;
+      transition: .4s;
+      margin-top: 100px;
+
+      &:hover {
+        background-color: #1D539E;
+        color: #FFFFFF;
+      }
+    }
+
+    .btn {
+      margin-top: 49px;
+      background-color: #1D539E;
+      color: #FFFFFF;
+
+      &:hover {
+        background-color: #FFFFFF;
+        color: #1D539E;
+      }
+    }
+
+    .btn-two {
+      margin-top: 22px;
+    }
+
+    .header-item {
+      background-color: #FFCC29;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 30px;
+      border-radius: 10px 10px 0 0;
+
+      h2 {
+        font-size: 20px;
+        color: #1D539E;
+        font-weight: 600;
+      }
+
+      span {
+        background-color: #1D539E;
+        border-radius: 40px;
+        color: #FFFFFF;
+        font-size: 12px;
+        padding: 8px 24px;
+        max-height: 32px;
+        align-items: center;
+        display: flex;
+      }
+    }
+
+    .content {
+      padding-top: 10px;
+      padding-left: 30px;
+      padding-right: 30px;
+      padding-bottom: 30px;
+
+      .price {
+        margin-top: 0;
+      }
+    }
+  }
+
+  .second {
+    padding: 0;
   }
 }
