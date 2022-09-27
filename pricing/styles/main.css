@@ -12,7 +12,7 @@
 }
 
 body {
-  background-image: linear-gradient(to top, white 50%, #1D539E 50%);
+  background-image: linear-gradient(to top, #f9fbfc 50%, #1D539E 50%);
   background-repeat: no-repeat;
   height: 100vh;
   font-family: "Open Sans", sans-serif;
@@ -64,7 +64,7 @@ ul {
   font-size: 18px;
 }
 .card .card-item p, .card .card-item ul {
-  color: #828799;
+  color: var(--gray);
   font-size: 14px;
   line-height: 19px;
 }
@@ -82,7 +82,7 @@ ul {
   margin-top: 20px;
 }
 .card .card-item .price span {
-  color: #828799;
+  color: var(--gray);
 }
 .card .card-item .price span strong {
   color: black;
@@ -97,10 +97,10 @@ ul {
   padding: 8px 16px;
   width: 100%;
   border: none;
-  border: 1px solid #1D539E;
+  border: 1px solid var(--blue);
   border-radius: 10px;
   font-size: 18px;
-  color: #1D539E;
+  color: var(--blue);
   text-transform: uppercase;
   background-color: #FFFFFF;
   cursor: pointer;
@@ -108,23 +108,23 @@ ul {
   margin-top: 100px;
 }
 .card .card-item button:hover {
-  background-color: #1D539E;
+  background-color: var(--blue);
   color: #FFFFFF;
 }
 .card .card-item .btn {
   margin-top: 49px;
-  background-color: #1D539E;
+  background-color: var(--blue);
   color: #FFFFFF;
 }
 .card .card-item .btn:hover {
   background-color: #FFFFFF;
-  color: #1D539E;
+  color: var(--blue);
 }
 .card .card-item .btn-two {
   margin-top: 22px;
 }
 .card .card-item .header-item {
-  background-color: #FFCC29;
+  background-color: var(--yellow);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -133,11 +133,11 @@ ul {
 }
 .card .card-item .header-item h2 {
   font-size: 20px;
-  color: #1D539E;
+  color: var(--blue);
   font-weight: 600;
 }
 .card .card-item .header-item span {
-  background-color: #1D539E;
+  background-color: var(--blue);
   border-radius: 40px;
   color: #FFFFFF;
   font-size: 12px;
@@ -157,4 +157,33 @@ ul {
 }
 .card .second {
   padding: 0;
+}
+
+@media (max-width: 900px) {
+  .card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 700px) {
+  .card {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .header h1 {
+    font-size: 32px;
+  }
+  .header p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 600px) {
+  .header {
+    padding: 30px;
+  }
+  .header h1 {
+    line-height: normal;
+  }
+  .header p {
+    line-height: normal;
+  }
 }/*# sourceMappingURL=main.css.map */
