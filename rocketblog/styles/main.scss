@@ -7,11 +7,16 @@
   box-sizing: border-box;
 }
 
-:root {
-  --purple-bg: #290742;
-  --dark-bg: #170027;
-  --button-bg: #9e6dc2;
-  --white: #fff;
-  --light-purple: #fbf6ff;
-  --green: #4fff4b;
+ul {
+  list-style: none;
+}
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
 }

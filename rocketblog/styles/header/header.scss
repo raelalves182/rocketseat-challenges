@@ -1,7 +1,66 @@
-.header-bg {
-  background-color: #9E6DC2;
+:root {
+  --purple-bg: #290742;
+  --dark-bg: #170027;
+  --button-bg: #9e6dc2;
+  --white: #fff;
+  --light-purple: #fbf6ff;
+  --green: #4fff4b;
+}
 
-  &__menu {
-    display: flex;
+.header-bg {
+  padding-top: 80px;
+  background-color: var(--purple-bg);
+  box-shadow: 4px 6px var(--green);
+
+  .header {
+    &__menu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav {
+      ul {
+        display: flex;
+        gap: 32px;
+        font-size: 18px;
+        line-height: 21px;
+        font-weight: 700;
+        color: var(--white);
+
+        &:nth-child(1) {
+          border-left: 3px solid var(--green);
+          padding-left: 4px;
+        }
+      }
+    }
+
+    .form {
+      display: flex;
+      align-items: center;
+
+      input {
+        width: 280px;
+        height: 44px;
+        border-radius: 4px 0 0 4px;
+        outline: none;
+        border: 1px;
+        background-color: var(--dark-bg);
+
+        &::placeholder {
+          padding-left: 24px;
+          color: var(--white);
+        }
+      }
+
+      button {
+        width: 70px;
+        height: 44px;
+        background-color: var(--button-bg);
+        cursor: pointer;
+        border-radius: 0px 4px 4px 0px;
+        border: none;
+      }
+    }
   }
 }
