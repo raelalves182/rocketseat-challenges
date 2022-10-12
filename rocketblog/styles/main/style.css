@@ -1,1 +1,44 @@
-/*# sourceMappingURL=style.css.map */
+.recents {
+  margin: 64px 0;
+  display: flex;
+  gap: 130px;
+}
+.recents__post {
+  max-width: 560px;
+}
+.recents__post .post-title {
+  margin-bottom: 16px;
+}
+.recents__post .post-title img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 16px;
+}
+.recents__post .post-title span {
+  font-size: 16px;
+  line-height: 19px;
+}
+.recents__post .post-content h1 {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 700;
+  color: var(--purple-bg);
+  margin-bottom: 16px;
+}
+.recents__post .post-content p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.recents__sidebar .sidebar-title h2 {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 700;
+  color: var(--purple-bg);
+  margin-bottom: 16px;
+}
+.recents__sidebar .sidebar-title p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}/*# sourceMappingURL=style.css.map */
