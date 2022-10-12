@@ -9,6 +9,7 @@
 
 .header-bg {
   padding-top: 80px;
+  padding-bottom: 64px;
   background-color: var(--purple-bg);
   box-shadow: 4px 6px var(--green);
 }
@@ -16,48 +17,92 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
-.header-bg .header .nav ul {
+.header-bg .header__menu .nav ul {
   display: flex;
   gap: 32px;
   font-size: 18px;
   line-height: 21px;
   font-weight: 700;
-  color: var(--white);
 }
-.header-bg .header .nav ul:nth-child(1) {
+.header-bg .header__menu .nav ul li a {
+  text-decoration: none;
+  color: var(--white);
+  border-left: 3px solid var(--purple-bg);
+  padding-left: 4px;
+  transition: 0.3S;
+}
+.header-bg .header__menu .nav ul li a:hover:nth-child(1) {
   border-left: 3px solid var(--green);
   padding-left: 4px;
 }
-.header-bg .header .form {
+.header-bg .header__menu .form {
   display: flex;
   align-items: center;
 }
-.header-bg .header .form input {
+.header-bg .header__menu .form input {
   width: 280px;
   height: 44px;
   border-radius: 4px 0 0 4px;
   outline: none;
   border: 1px;
   background-color: var(--dark-bg);
-}
-.header-bg .header .form input::-moz-placeholder {
+  color: var(--white);
   padding-left: 24px;
+}
+.header-bg .header__menu .form input::-moz-placeholder {
   color: var(--white);
 }
-.header-bg .header .form input:-ms-input-placeholder {
-  padding-left: 24px;
+.header-bg .header__menu .form input:-ms-input-placeholder {
   color: var(--white);
 }
-.header-bg .header .form input::placeholder {
-  padding-left: 24px;
+.header-bg .header__menu .form input::placeholder {
   color: var(--white);
 }
-.header-bg .header .form button {
+.header-bg .header__menu .form button {
   width: 70px;
   height: 44px;
   background-color: var(--button-bg);
   cursor: pointer;
   border-radius: 0px 4px 4px 0px;
   border: none;
+}
+.header-bg .header__content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 64px;
+  gap: 32px;
+}
+.header-bg .header__content .text h1 {
+  font-size: 36px;
+  line-height: 54px;
+  max-width: 500px;
+  color: var(--button-bg);
+  margin-bottom: 16px;
+}
+.header-bg .header__content .text p {
+  color: var(--light-purple);
+  max-width: 460px;
+  font-size: 18px;
+  line-height: 27px;
+  margin-bottom: 24px;
+}
+.header-bg .header__content .text a {
+  text-decoration: none;
+  color: var(--button-bg);
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 700;
+  position: relative;
+}
+.header-bg .header__content .text a::after {
+  content: url(../../assets/arrow-right.svg);
+  position: absolute;
+  padding-left: 8px;
+}
+.header-bg .header__content .img img {
+  width: 100%;
+  height: auto;
 }/*# sourceMappingURL=header.css.map */
