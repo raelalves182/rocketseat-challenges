@@ -30,15 +30,49 @@
   line-height: 24px;
   font-weight: 400;
 }
+.recents__sidebar .mode {
+  border-bottom: 1px solid #F2E7FA;
+  margin-bottom: 24px;
+}
 .recents__sidebar .sidebar-title h2 {
   font-size: 24px;
   line-height: 36px;
   font-weight: 700;
   color: var(--purple-bg);
   margin-bottom: 16px;
+  margin-top: 8px;
 }
 .recents__sidebar .sidebar-title p {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
+  margin-bottom: 24px;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 64px;
+}
+.cards .card-item {
+  max-width: 370px;
+}
+.cards .card-item img {
+  margin-bottom: 8px;
+  width: 100%;
+  height: auto;
+}
+.cards .card-item h2 {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 700;
+  color: var(--purple-bg);
+  margin: 8px 0;
+}
+.cards .card-item p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  margin-bottom: 24px;
 }/*# sourceMappingURL=style.css.map */
